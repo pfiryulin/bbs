@@ -34,4 +34,4 @@ Route::get('home/{bb}/delete', [HomeController::class, 'delete'])->name('bb.dele
 Route::delete('home/{bb}', [HomeController::class, 'destroy'])->name('bb.destroy');
 
 Route::get('/{bb}', [BbsController::class, 'detail'])->name('detail');
-Route::get('/test', [BbsController::class, 'testPage']);
+Route::get('/test', [BbsController::class, 'testPage'])->name('test');
